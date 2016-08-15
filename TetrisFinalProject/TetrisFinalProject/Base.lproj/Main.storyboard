@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="TetrisFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8fE-sX-AJ8" appends="YES" id="3RR-8f-4FL"/>
+                            <outletCollection property="gestureRecognizers" destination="xgz-gG-qLX" appends="YES" id="UQA-UK-cft"/>
+                            <outletCollection property="gestureRecognizers" destination="8Ao-FN-MGG" appends="YES" id="fxq-16-Xzt"/>
+                        </connections>
+                    </sceneKitView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8fE-sX-AJ8">
+                    <connections>
+                        <action selector="didTap:" destination="BV1-FR-VrT" id="S8G-4U-F7A"/>
+                        <outlet property="delegate" destination="BV1-FR-VrT" id="j6h-VY-sJI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xgz-gG-qLX">
+                    <connections>
+                        <action selector="didPan:" destination="BV1-FR-VrT" id="Pca-Vj-Hkf"/>
+                        <outlet property="delegate" destination="BV1-FR-VrT" id="dLE-te-kZ6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="8Ao-FN-MGG">
+                    <connections>
+                        <action selector="didDwipe:" destination="BV1-FR-VrT" id="DZT-7i-vvW"/>
+                        <outlet property="delegate" destination="BV1-FR-VrT" id="9kw-iR-PlN"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
