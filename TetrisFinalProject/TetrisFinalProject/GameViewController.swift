@@ -136,7 +136,15 @@ class GameViewController: UIViewController, TetrisGameDelegate, UIGestureRecogni
     
     func gameShapeDidLand(tetrisGame: TetrisGame) {
         scene.stopTicking()
-        nextShape()
+        let removedLines = tetrisGame.removeCompletedLines()
+        if removedLines.linesRemoved.count > 0 {
+            //self.scoreLabel.text = "\(tetrisGame.score)"
+            scene.animateCollapsingLines(removedLines.linesRemoved, fallenBlocks:removedLines.fallenBlocks) {
+                self.gameShapeDidLand(tetrisGame)
+            }
+        } else {
+            nextShape()
+        }
     }
     
     func gameShapeDidMove(tetrisGame: TetrisGame) {

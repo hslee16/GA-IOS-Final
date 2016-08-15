@@ -33,6 +33,7 @@
 		FA5CE2ED1D5811CA00EAA7FF /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5CE2EC1D5811CA00EAA7FF /* SShape.swift */; };
 		FA5CE2EF1D5811EF00EAA7FF /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5CE2EE1D5811EF00EAA7FF /* ZShape.swift */; };
 		FA5CE2F11D58149D00EAA7FF /* TetrisGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5CE2F01D58149D00EAA7FF /* TetrisGame.swift */; };
+		FAE437D61D6149E300BF3ABE /* SmallLShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE437D51D6149E300BF3ABE /* SmallLShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		FA5CE2EC1D5811CA00EAA7FF /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		FA5CE2EE1D5811EF00EAA7FF /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		FA5CE2F01D58149D00EAA7FF /* TetrisGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisGame.swift; sourceTree = "<group>"; };
+		FAE437D51D6149E300BF3ABE /* SmallLShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmallLShape.swift; path = ../SmallLShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				FA5C73881D6146550056B27A /* DonutShape.swift */,
 				FA5CE2E21D580C6F00EAA7FF /* SquareShape.swift */,
 				FA5CE2E41D58108200EAA7FF /* TShape.swift */,
+				FAE437D51D6149E300BF3ABE /* SmallLShape.swift */,
 				FA5CE2E61D58112200EAA7FF /* LineShape.swift */,
 				FA5CE2E81D58116F00EAA7FF /* LShape.swift */,
 				FA5CE2EA1D58119900EAA7FF /* JShape.swift */,
@@ -221,6 +224,7 @@
 				FA5C73871D613F880056B27A /* ThickLineShape.swift in Sources */,
 				FA5C73891D6146550056B27A /* DonutShape.swift in Sources */,
 				FA2D4FDC1D56AECE00060AEE /* Shape.swift in Sources */,
+				FAE437D61D6149E300BF3ABE /* SmallLShape.swift in Sources */,
 				FA2D4FD81D56910800060AEE /* Array2D.swift in Sources */,
 				FA5CE2E71D58112200EAA7FF /* LineShape.swift in Sources */,
 				FA5CE2ED1D5811CA00EAA7FF /* SShape.swift in Sources */,

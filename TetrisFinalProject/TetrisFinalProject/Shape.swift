@@ -11,7 +11,7 @@ import SpriteKit
 
 let NumOrientations: UInt32 = 4
 let NumShapeTypes: UInt32 = 8
-let NumDifficultShapeTypes: UInt32 = 2
+let NumDifficultShapeTypes: UInt32 = 3
 
 
 enum Orientation: Int, CustomStringConvertible {
@@ -158,7 +158,6 @@ class Shape: Hashable, CustomStringConvertible {
         default:
             return ZShape(column:startingColumn, row:startingRow)
         }
-        
     }
     
     final class func randomDifficult(startingColumn:Int, startingRow:Int) -> Shape {
@@ -168,7 +167,7 @@ class Shape: Hashable, CustomStringConvertible {
         case 1:
             return DonutShape(column: startingColumn, row: startingRow)
         default:
-            return ZShape(column:startingColumn, row:startingRow)
+            return SmallLShape(column:startingColumn, row:startingRow)
         }
     }
     
